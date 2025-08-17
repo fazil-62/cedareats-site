@@ -279,18 +279,6 @@ var settings = {
 		// Banner.
 			$banner._slider(settings.banner);
 
-		// Menu.
-			$('#menu')
-				.append('<a href="#menu" class="close"></a>')
-				.appendTo($body)
-				.panel({
-					delay: 500,
-					hideOnClick: true,
-					hideOnSwipe: true,
-					resetScroll: true,
-					resetForms: true,
-					side: 'right'
-				});
 
 		// Header.
 			if (skel.vars.IEVersion < 9)
@@ -313,3 +301,24 @@ var settings = {
 	});
 
 })(jQuery);
+
+
+// === Cedaro Mobile Hamburger Menu ===
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburgerBtn = document.getElementById("hamburger-btn");
+  const mobileDrawer = document.getElementById("mobile-drawer");
+  const backdrop = document.getElementById("drawer-backdrop");
+  const body = document.body;
+
+  if (hamburgerBtn && mobileDrawer && backdrop) {
+    function toggleMenu() {
+      hamburgerBtn.classList.toggle("active");
+      mobileDrawer.classList.toggle("active");
+      backdrop.classList.toggle("active");
+      body.classList.toggle("no-scroll");
+    }
+
+    hamburgerBtn.addEventListener("click", toggleMenu);
+    backdrop.addEventListener("click", toggleMenu);
+  }
+});
