@@ -4319,7 +4319,7 @@ CSS for CEDAR by me  */
    CUSTOM CEDARKART HEADER STYLING
 -------------------------------------- */
 #header {
-  background: #e46f4c; /* your orange */
+  background: #243d1c; /* your green */
   height: 100px;
   width: 100%;
   position: fixed;
@@ -4338,7 +4338,7 @@ CSS for CEDAR by me  */
 } 
 
 #header.alt {
-  background: #e46f4c; /* your orange */
+  background: #243d1c; /* your green */
   height: 100px;
   width: 100%;
   position: fixed;
@@ -4565,7 +4565,7 @@ body {
 }
 
 .custom-footer {
-  background-color: #e46f4c; /* Your orange */
+  background-color: #243d1c; /* Your orange */
   color: #fff5e0;            /* Your cream */
   padding: 3em 2em;
   font-family: sans-serif;
