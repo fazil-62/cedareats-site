@@ -4404,6 +4404,29 @@ body {
   font-size: 2.5rem;    /* Make it big — adjust as needed */
   font-weight: 700;     /* Bold */
 }
+
+@media screen and (max-width: 768px) {
+  #header {
+    padding: 0 1em;
+  }
+
+  #header .logo img {
+    height: 70px; /* Shrink logo to fit */
+  }
+
+  #header .top-nav ul {
+    gap: 1em; /* Reduce spacing between nav items */
+  }
+
+  #header .top-nav ul li a {
+    font-size: 0.85em; /* Reduce font size slightly */
+  }
+
+  body {
+    padding-top: 90px; /* Adjust if needed */
+  }
+}
+
 /* -------------------------------------
    BANNER
 -------------------------------------- */
@@ -4796,3 +4819,189 @@ body {
     align-items: center;
   }
 }
+
+/*---------------*\
+
+/* === Cedaro Responsive Fixes + Hamburger Menu === */
+
+/* Hide hamburger + drawer on desktop */
+.hamburger, .mobile-drawer, .backdrop {
+  display: none;
+}
+
+/* Responsive fixes for all sections */
+@media screen and (max-width: 980px) {
+  /* Hide desktop nav */
+  .top-nav { display: none !important; }
+
+  /* Header spacing for hamburger */
+  #header { position: relative; padding-right: 56px; }
+
+  /* Hamburger button */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 22px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1002;
+  }
+  .hamburger span {
+    height: 3px;
+    width: 100%;
+    background: #243d1c; /* Cedaro green */
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  /* Drawer menu */
+  .mobile-drawer {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    max-width: 300px;
+    height: 100vh;
+    background: #fff; /* keep neutral */
+    box-shadow: -4px 0 12px rgba(0,0,0,0.15);
+    z-index: 1001;
+    transition: right 0.3s ease;
+    padding: 40px 20px;
+    overflow-y: auto;
+  }
+  .mobile-drawer ul { list-style: none; padding: 0; margin: 0; }
+  .mobile-drawer li { margin: 15px 0; }
+  .mobile-drawer a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #243d1c;
+    display: block;
+  }
+
+  /* Hamburger button */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px; /* spacing between the bars */
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background: #e46f4c !important; /* Cedaro orange */
+  border: none;
+  border-radius: 6px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1002;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 24px;
+  background: #243d1c; /* Cedaro green */
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Drawer menu */
+.mobile-drawer {
+  background: #e46f4c !important; /* Cedaro orange */
+}
+
+.mobile-drawer a {
+  color: #fff5e0 !important; /* Cedaro cream */
+  font-weight: 500;
+}
+
+
+  /* Backdrop */
+  .backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+  }
+
+  /* Active states */
+  .mobile-drawer.active { right: 0; }
+  .backdrop.active { opacity: 1; pointer-events: auto; }
+
+  /* Animate hamburger into X */
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  /* === Mobile Layout Fixes === */
+
+  /* Recipes Section */
+  .grid-style {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .grid-style > div {
+    width: 100% !important;
+  }
+
+  /* Gallery Section */
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .gallery .image.fit img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer Section */
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-column {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .footer-contact {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-contact .contact-item {
+    margin: 10px 0;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+/* Tiny screens (extra tweaks) */
+@media screen and (max-width: 420px) {
+  .hamburger { right: 12px; top: 12px; width: 26px; height: 20px; }
+  .mobile-drawer a { padding: 14px 6px; font-size: 17px; }
+}
+
