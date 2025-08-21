@@ -7,17 +7,19 @@
 <html>
 
 <head>
-	<title>CEDAR</title>
+	<title>Recipes - Cedaro</title>
+	<link rel="icon" type="image/png" href="images/Website layout-05.png">
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 
 <body>
 
 	<!-- Header -->
 	<header id="header" class="alt">
-		<div class="logo"><img src="images\CEDARLOGO.png" alt="Cedarkart Logo" /></div>
+		<div class="logo"><img src="images/cedaro-logo.png" alt="Cedaro" /></div>
 		<nav class="top-nav">
 			<ul>
 				<li><a href="index.html">Home</a></li>
@@ -27,162 +29,117 @@
 				<li><a href="contact.html">Contact Us</a></li>
 			</ul>
 		</nav>
+		<button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
 	</header>
 
-	<!-- Nav -->
-	<nav id="menu">
-		<ul class="links">
+	<!-- Mobile Drawer Menu -->
+	<nav class="mobile-drawer" id="mobile-drawer">
+		<ul>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="generic.html">Generic</a></li>
-			<li><a href="elements.html">Elements</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="recipes.html">Recipes</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
 		</ul>
 	</nav>
 
-	<!-- Banner -->
-	<section class="banner full">
-		<article>
-			<img src="images/Jar Mock Up 1.jpg" alt="" />
-			<div class="inner">
-				<header>
-					<p>Naturally preserved, irresistibly delicious.</a></p>
-					<h2>Pickled to Perfection</h2>
-				</header>
-			</div>
-		</article>
-		<article>
-			<img src="images/Jar Mock up 2.jpg" alt="" />
-			<div class="inner">
-				<header>
-					<p>No preservatives. Just love.</p>
-					<h2>Pure Ingredients. Bold Taste.</h2>
-				</header>
-			</div>
-		</article>
-		<article>
-			<img src="images/Jar Mock Up 3.jpg" alt="" />
-			<div class="inner">
-				<header>
-					<p>Rooted in heritage. Made for today.</p>
-					<h2>Traditional Recipes, Modern Twist</h2>
-				</header>
-			</div>
-		</article>
-	</section>
+	<!-- Backdrop -->
+	<div class="backdrop" id="drawer-backdrop"></div>
 
-	<!-- One -->
-	<section id="one" class="wrapper style2">
+	<section class="recipes-section">
 		<div class="inner">
 			<header class="align-center">
-				<!-- <p>Handcrafted with tradition and flavor</p> -->
-				<h2>Our Favourite Recipes</h2>
+				<h2>Fun, Real, Healthy Recipes</h2>
+				<p>Wholesome recipes from around the world featuring Cedaro pickles.</p>
 			</header>
-			<div class="grid-style">
 
-				<div>
-					<div class="box">
-						<div class="image fit">
-							<img src="images/Recipe 1.jpg" alt="" />
-						</div>
-						<div class="content">
-							<header class="align-center">
-								<p>maecenas sapien feugiat ex purus</p>
-								<h2>Salad</h2>
-							</header>
-							<p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit
-								amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex
-								purus, quis volutpat lacus placerat malesuada.</p>
-							<footer class="align-center">
-								<a href="#" class="button alt">Learn More</a>
-							</footer>
-						</div>
+			<div class="recipes-grid">
+
+				<!-- Recipe 1 -->
+				<div class="recipe-card">
+					<img src="images/JalapenoNachos.jpg" alt="Loaded Jalapeño Nachos">
+					<h3>Loaded Jalapeño Nachos</h3>
+					<p class="short-desc">Crispy tortilla chips layered with cheese, beans, salsa, and a tangy kick of
+						Cedaro Jalapeños. A Mexican fiesta in every bite!</p>
+					<div class="full-recipe">
+						<p><strong>Ingredients:</strong> Tortilla chips, cheddar cheese, black beans, salsa, sour cream,
+							Cedaro Jalapeños.</p>
+						<p><strong>Method:</strong> Layer chips with beans, cheese, salsa, and sliced Cedaro Jalapeños.
+							Bake until cheese melts, then top with sour cream.</p>
 					</div>
+					<button class="toggle-btn">View Recipe</button>
 				</div>
 
-				<div>
-					<div class="box">
-						<div class="image fit">
-							<img src="images/Recipe 2.jpg" alt="" />
-						</div>
-						<div class="content">
-							<header class="align-center">
-								<p>mattis elementum sapien pretium tellus</p>
-								<h2>Sandwhich</h2>
-							</header>
-							<p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit
-								amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex
-								purus, quis volutpat lacus placerat malesuada.</p>
-							<footer class="align-center">
-								<a href="#" class="button alt">Learn More</a>
-							</footer>
-						</div>
+				<!-- Recipe 2 -->
+				<div class="recipe-card">
+					<img src="images/gherkinburger.jpg" alt="Spicy Gherkin Burger">
+					<h3>Spicy Gherkin Burger</h3>
+					<p class="short-desc">A juicy grilled patty stacked with lettuce, cheese, and a fiery crunch of
+						Cedaro Baby Gherkins – Chilli.</p>
+					<div class="full-recipe">
+						<p><strong>Ingredients:</strong> Burger buns, beef/chicken patty, lettuce, cheese, Cedaro Baby
+							Gherkins – Chilli, mayo, ketchup.</p>
+						<p><strong>Method:</strong> Grill patty, toast buns, assemble with cheese, lettuce, mayo,
+							ketchup, and sliced Cedaro gherkins.</p>
 					</div>
+					<button class="toggle-btn">View Recipe</button>
 				</div>
 
-				<div>
-					<div class="box">
-						<div class="image fit">
-							<img src="images/Recipe 3.jpg" alt="" />
-						</div>
-						<div class="content">
-							<header class="align-center">
-								<p>mattis elementum sapien pretium tellus</p>
-								<h2>Greek Wrap</h2>
-							</header>
-							<p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit
-								amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex
-								purus, quis volutpat lacus placerat malesuada.</p>
-							<footer class="align-center">
-								<a href="#" class="button alt">Learn More</a>
-							</footer>
-						</div>
+				<!-- Recipe 3 -->
+				<div class="recipe-card">
+					<img src="images/cornNoodles.jpg" alt="Baby Corn Stir-Fry">
+					<h3>Asian Baby Corn Stir-Fry</h3>
+					<p class="short-desc">A quick wok-tossed veggie delight with noodles, soy sauce, and crunchy Cedaro
+						Baby Corn – Herbs.</p>
+					<div class="full-recipe">
+						<p><strong>Ingredients:</strong> Noodles, soy sauce, garlic, bell peppers, Cedaro Baby Corn –
+							Herbs.</p>
+						<p><strong>Method:</strong> Stir-fry garlic and veggies, add Cedaro baby corn and noodles. Toss
+							with soy sauce and serve hot.</p>
 					</div>
+					<button class="toggle-btn">View Recipe</button>
+				</div>
+
+				<!-- Recipe 4 -->
+				<div class="recipe-card">
+					<img src="images/MediterraneanChickpeaSalad_Square.jpg" alt="Mediterranean Banderilla Salad">
+					<h3>Mediterranean Banderilla Salad</h3>
+					<p class="short-desc">A refreshing mix of greens, olives, and the bold flavors of Cedaro Banderilla
+						skewers chopped into a vibrant salad.</p>
+					<div class="full-recipe">
+						<p><strong>Ingredients:</strong> Mixed greens, cherry tomatoes, feta cheese, Cedaro Banderilla,
+							olive oil, lemon juice.</p>
+						<p><strong>Method:</strong> Toss greens, tomatoes, and feta. Chop Cedaro Banderilla pieces, mix
+							in, and drizzle with olive oil + lemon juice.</p>
+					</div>
+					<button class="toggle-btn">View Recipe</button>
+				</div>
+
+				<!-- Recipe 5 -->
+				<div class="recipe-card">
+					<img src="images/relsihDog.jpg" alt="Hot & Sweet Relish Dog">
+					<h3>Hot & Sweet Relish Dog</h3>
+					<p class="short-desc">A classic hotdog topped with Cedaro Relish – Hot & Sweet, balancing tang,
+						crunch, and flavor in one bite.</p>
+					<div class="full-recipe">
+						<p><strong>Ingredients:</strong> Hotdog buns, sausages, mustard, Cedaro Relish – Hot & Sweet.
+						</p>
+						<p><strong>Method:</strong> Grill sausages, place in buns, top with mustard and a generous spoon
+							of Cedaro relish.</p>
+					</div>
+					<button class="toggle-btn">View Recipe</button>
 				</div>
 
 			</div>
 		</div>
 	</section>
 
-	<!-- Two -->
-	<!-- <section id="two" class="wrapper style3">
-				<div class="inner">
-					<header class="align-center">
-						<p>Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
-						<h2>Morbi maximus justo</h2>
-					</header>
-				</div>
-			</section> -->
 
-	<!-- Three -->
-	<!-- <section id="three" class="wrapper style2">
-		<div class="inner">
-			<header class="align-center"> -->
-				<!-- <p class="special">Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p> -->
-				<!-- <h2>Discover More</h2>
-			</header>
-			<div class="gallery">
-				<div>
-					<div class="image fit">
-						<a href="#"><img src="images/pic01.jpg" alt="" /></a>
-					</div>
-				</div>
-				<div>
-					<div class="image fit">
-						<a href="#"><img src="images/pic02.jpg" alt="" /></a>
-					</div>
-				</div>
-				<div>
-					<div class="image fit">
-						<a href="#"><img src="images/pic03.jpg" alt="" /></a>
-					</div>
-				</div>
-				<div>
-					<div class="image fit">
-						<a href="#"><img src="images/pic04.jpg" alt="" /></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
+
 
 
 	<!-- Footer -->
@@ -191,43 +148,32 @@
 			<div class="footer-column">
 				<h3>Quick Links</h3>
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Recipes</a></li>
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Contact Us</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="recipes.html">Recipes</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
 				</ul>
 			</div>
 
 			<div class="footer-column">
 				<h3>Our Products</h3>
 				<ul>
-					<li><a href="#">Condiments</a></li>
-					<li><a href="#">Peanut Butter</a></li>
-					<li><a href="#">Popcorn</a></li>
-					<li><a href="#">Desserts</a></li>
-					<li><a href="#">Cooking Aids</a></li>
-					<li><a href="#">Preserved Foods</a></li>
+					<li><a href="products.html">Jalapeno</a></li>
+					<li><a href="products.html">Baby Gherkins – Chilli</a></li>
+					<li><a href="products.html">Baby Gherkins – Herbs</a></li>
+					<li><a href="products.html">Burger Chips – Chilli</a></li>
+					<li><a href="products.html">Banderilla</a></li>
 				</ul>
 			</div>
-
 			<div class="footer-column">
-				<h3>By Occasions</h3>
+				<h3><br></h3>
 				<ul>
-					<li><a href="#">Snacking</a></li>
-					<li><a href="#">Ramadan</a></li>
-					<li><a href="#">BBQ</a></li>
-				</ul>
-			</div>
-
-			<div class="footer-column">
-				<h3>By Courses</h3>
-				<ul>
-					<li><a href="#">Vegetarian</a></li>
-					<li><a href="#">Main Course</a></li>
-					<li><a href="#">Side Dish</a></li>
-					<li><a href="#">Soups</a></li>
-					<li><a href="#">Beverages</a></li>
+					<li><a href="products.html">Pickled Red Chilli</a></li>
+					<li><a href="products.html">Pickled Green Chilli</a></li>
+					<li><a href="products.html">Baby Corn – Chilli</a></li>
+					<li><a href="products.html">Baby Corn – Herbs</a></li>
+					<li><a href="products.html">Relish – Hot & Sweet</a></li>
 				</ul>
 			</div>
 		</div>
@@ -235,38 +181,47 @@
 		<div class="footer-contact">
 			<div class="contact-item">
 				<i class="fa fa-map-marker"></i>
-				<span>123 Pickle Street, Mangalore, India</span>
+				<span>GLOBAL DISTRIBUTORS AND <br>CO
+					, JEPPU, MANGALORE</span>
 			</div>
 			<div class="contact-item">
 				<i class="fa fa-phone"></i>
-				<span>+91 98765 43210</span>
+				<span>+91 6366955005</span>
 			</div>
 			<div class="contact-item">
 				<i class="fa fa-envelope"></i>
-				<span>support@cedarkart.com</span>
+				<span>contact@cedarofresh.com</span>
 			</div>
 		</div>
 
 		<div class="footer-bottom">
 			<div class="footer-copy">
-				© 2025 Cedarkart. All Rights Reserved.
+				© 2025 Cedaro. All Rights Reserved.
 			</div>
-			<div class="footer-links">
+			<!-- <div class="footer-links">
 				<a href="#">Sitemap</a> |
 				<a href="#">Privacy Policy</a> |
 				<a href="#">Terms of Service</a>
-			</div>
+			</div> -->
 		</div>
 	</footer>
 
 
 	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+	 <script src="assets/js/main.js"></script>
+	<script>document.addEventListener("DOMContentLoaded", () => {
+			const buttons = document.querySelectorAll(".toggle-btn");
 
+			buttons.forEach(btn => {
+				btn.addEventListener("click", () => {
+					const recipe = btn.previousElementSibling;
+					recipe.style.display =
+						recipe.style.display === "block" ? "none" : "block";
+					btn.textContent =
+						recipe.style.display === "block" ? "Hide Recipe" : "View Recipe";
+				});
+			});
+		});</script>
 </body>
 
 </html>

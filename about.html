@@ -1,23 +1,21 @@
 <!DOCTYPE HTML>
-<!--
-	Hielo by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+
 <html>
 
 <head>
-	<title>CEDAR</title>
+	<title>About Us - Cedaro</title>
+	<link rel="icon" type="image/png" href="images/Website layout-05.png">
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
 
 	<!-- Header -->
 	<header id="header" class="alt">
-		<div class="logo"><img src="images\CEDARLOGO.png" alt="Cedarkart Logo" /></div>
+		<div class="logo"><img src="images/cedaro-logo.png" alt="Cedaro" /></div>
 		<nav class="top-nav">
 			<ul>
 				<li><a href="index.html">Home</a></li>
@@ -27,170 +25,43 @@
 				<li><a href="contact.html">Contact Us</a></li>
 			</ul>
 		</nav>
+		<button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
 	</header>
 
-	<!-- Nav -->
-	<nav id="menu">
-		<ul class="links">
+	<!-- Mobile Drawer Menu -->
+	<nav class="mobile-drawer" id="mobile-drawer">
+		<ul>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="generic.html">Generic</a></li>
-			<li><a href="elements.html">Elements</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="recipes.html">Recipes</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
 		</ul>
 	</nav>
 
-	<!-- Banner -->
-	<section class="banner full">
-		<article>
-			<img src="images/Jar Mock Up 1.jpg" alt="" />
-			<div class="inner">
-				<header>
-					<p>Naturally preserved, irresistibly delicious.</a></p>
-					<h2>Pickled to Perfection</h2>
-				</header>
-			</div>
-		</article>
-		<article>
-			<img src="images/Jar Mock up 2.jpg" alt="" />
-			<div class="inner">
-				<header>
-					<p>No preservatives. Just love.</p>
-					<h2>Pure Ingredients. Bold Taste.</h2>
-				</header>
-			</div>
-		</article>
-		<article>
-			<img src="images/Jar Mock Up 3.jpg" alt="" />
-			<div class="inner">
-				<header>
-					<p>Rooted in heritage. Made for today.</p>
-					<h2>Traditional Recipes, Modern Twist</h2>
-				</header>
-			</div>
-		</article>
-	</section>
+	<!-- Backdrop -->
+	<div class="backdrop" id="drawer-backdrop"></div>
 
-	<!-- One -->
-	<!-- <section id="one" class="wrapper style2">
-		<div class="inner">
-			<header class="align-center"> -->
-	<!-- <p>Handcrafted with tradition and flavor</p> -->
-	<!-- <h2>Our Favourite Recipes</h2>
-			</header>
-			<div class="grid-style">
-
-				<div>
-					<div class="box">
-						<div class="image fit">
-							<img src="images/Recipe 1.jpg" alt="" />
-						</div>
-						<div class="content">
-							<header class="align-center">
-								<p>maecenas sapien feugiat ex purus</p>
-								<h2>Salad</h2>
-							</header>
-							<p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit
-								amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex
-								purus, quis volutpat lacus placerat malesuada.</p>
-							<footer class="align-center">
-								<a href="#" class="button alt">Learn More</a>
-							</footer>
-						</div>
-					</div>
-				</div>
-
-				<div>
-					<div class="box">
-						<div class="image fit">
-							<img src="images/Recipe 2.jpg" alt="" />
-						</div>
-						<div class="content">
-							<header class="align-center">
-								<p>mattis elementum sapien pretium tellus</p>
-								<h2>Sandwhich</h2>
-							</header>
-							<p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit
-								amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex
-								purus, quis volutpat lacus placerat malesuada.</p>
-							<footer class="align-center">
-								<a href="#" class="button alt">Learn More</a>
-							</footer>
-						</div>
-					</div>
-				</div>
-
-				<div>
-					<div class="box">
-						<div class="image fit">
-							<img src="images/Recipe 3.jpg" alt="" />
-						</div>
-						<div class="content">
-							<header class="align-center">
-								<p>mattis elementum sapien pretium tellus</p>
-								<h2>Greek Wrap</h2>
-							</header>
-							<p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit
-								amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex
-								purus, quis volutpat lacus placerat malesuada.</p>
-							<footer class="align-center">
-								<a href="#" class="button alt">Learn More</a>
-							</footer>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section> -->
-
-	<!-- Two -->
-	<!-- <section id="two" class="wrapper style3">
-				<div class="inner">
-					<header class="align-center">
-						<p>Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
-						<h2>Morbi maximus justo</h2>
-					</header>
-				</div>
-			</section> -->
-
-	<!-- Three -->
-	<!-- <section id="three" class="wrapper style2">
-		<div class="inner">
-			<header class="align-center"> -->
-	<!-- <p class="special">Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p> -->
-	<!-- <h2>Discover More</h2>
-			</header>
-			<div class="gallery">
-				<div>
-					<div class="image fit">
-						<a href="#"><img src="images/pic01.jpg" alt="" /></a>
-					</div>
-				</div>
-				<div>
-					<div class="image fit">
-						<a href="#"><img src="images/pic02.jpg" alt="" /></a>
-					</div>
-				</div>
-				<div>
-					<div class="image fit">
-						<a href="#"><img src="images/pic03.jpg" alt="" /></a>
-					</div>
-				</div>
-				<div>
-					<div class="image fit">
-						<a href="#"><img src="images/pic04.jpg" alt="" /></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
 	<section class="about-section">
 		<div class="about-container">
 			<h1>About Us</h1>
 			<p class="about-intro">
-				At <strong>Cedar</strong>, we believe that the best flavors come from tradition, patience, and love. We
-				are a homegrown brand committed to reviving the timeless art of pickle-making with recipes passed down
-				through generations. Each jar we craft is a celebration of authenticity, using <em>natural
-					ingredients</em>, <em>zero preservatives</em>, and a whole lot of care.
+				<strong>Cedaro</strong> is a packaged food company. We
+				craft high-quality, honest
+				everyday essentials that’s
+				delicious and inspire simple, easy living.
+				Handpicked fresh from our farms, our
+				vegetables are carefully preserved at
+				our dedicated facility. <strong>Cedaro</strong>
+				brings the timeless art of pickling to life,
+				sharing authentic tastes with the world. We believe that the best flavors come from tradition, patience,
+				and love. With an earthy
+				passion for quality we capture the
+				essence of nature in every jar.
 			</p>
 
 			<div class="about-cards">
@@ -202,12 +73,12 @@
 
 				<div class="about-card">
 					<h2>👁️‍🗨️ Our Vision</h2>
-					<p>To be the most trusted name in traditional condiments — preserving culinary heritage while
-						delivering purity, taste, and freshness in every bite.</p>
+					<p>To be the most loved and trusted brand for wholesome, handcrafted pickles and gourmet delights,
+						connecting generations through taste.</p>
 				</div>
 
 				<div class="about-card">
-					<h2>💡 Why Cedar?</h2>
+					<h2>💡 Why Cedaro?</h2>
 					<ul>
 						<li>Locally sourced ingredients</li>
 						<li>Handmade in small batches</li>
@@ -215,6 +86,55 @@
 						<li>Flavor that reminds you of home</li>
 					</ul>
 				</div>
+			</div>
+			<div class="about-container">
+				<!-- Existing content remains above this point -->
+
+				<h2>Our Bulk Process Flow</h2>
+				<div class="flow-chart">
+					<div class="step">Raw Material Reception At Factory</div>
+					<span class="arrow">→</span>
+					<div class="step">Visual Inspection Of Raw Material</div>
+					<span class="arrow">→</span>
+					<div class="step">Precleaning, Grading & Sorting</div>
+					<span class="arrow">→</span>
+					<div class="step">X-Ray Inspection</div>
+					<span class="arrow">→</span>
+					<div class="step">Soaking</div>
+					<span class="arrow">→</span>
+					<div class="step">Vinegar/Acetic Acid/Brine Media Filling</div>
+					<span class="arrow">→</span>
+					<div class="step">Weighing</div>
+					<span class="arrow">→</span>
+					<div class="step">Filling Into Barrels</div>
+					<span class="arrow">→</span>
+					<div class="step">Inspection Of Raw Materials</div>
+					<span class="arrow">→</span>
+					<div class="step">Washing</div>
+					<span class="arrow">→</span>
+					<div class="step">Stabilization</div>
+					<span class="arrow">→</span>
+					<div class="step">QC Inspection</div>
+					<span class="arrow">→</span>
+					<div class="step">Final Packaging & Labelling</div>
+					<span class="arrow">→</span>
+					<div class="step">Dispatch</div>
+				</div>
+				<p class="about-process">
+					At the Bulk processing facility as a first step when the gherkins are received at the factory, the
+					production team manually inspects, pre-clean, grade and culls them to remove infested and damaged
+					fruits and extraneous matter. For the internal defects BA has installed a "first of its kind" "Make
+					In India" <strong>X-Ray based inspection</strong> machine called <strong>CONRAD-G</strong>. The feeding, imaging and segregation are
+					fully automated. We have two machines for the inspection of internal defects. Thus we ensure the
+					products we supply are free from external and internal defects.
+				</p>
+				<p class="about-process">
+					As a second step the gherkins are soaked and thoroughly washed in the plain potable water using
+					brush washing machine. After washing the gherkins are filled into the HDPE food grade barrels. The
+					gherkins filled barrels are weighed and Vinegar/Acetic Acid/Brine media will be filled and kept it
+					for stabilization. Once the product is stabilized, upon QC inspection and approval final packing
+					will be done and exported.
+				</p>
 			</div>
 
 			<p class="about-note">
@@ -233,43 +153,32 @@
 			<div class="footer-column">
 				<h3>Quick Links</h3>
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Recipes</a></li>
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Contact Us</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="recipes.html">Recipes</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
 				</ul>
 			</div>
 
 			<div class="footer-column">
 				<h3>Our Products</h3>
 				<ul>
-					<li><a href="#">Condiments</a></li>
-					<li><a href="#">Peanut Butter</a></li>
-					<li><a href="#">Popcorn</a></li>
-					<li><a href="#">Desserts</a></li>
-					<li><a href="#">Cooking Aids</a></li>
-					<li><a href="#">Preserved Foods</a></li>
+					<li><a href="products.html">Jalapeno</a></li>
+					<li><a href="products.html">Baby Gherkins – Chilli</a></li>
+					<li><a href="products.html">Baby Gherkins – Herbs</a></li>
+					<li><a href="products.html">Burger Chips – Chilli</a></li>
+					<li><a href="products.html">Banderilla</a></li>
 				</ul>
 			</div>
-
 			<div class="footer-column">
-				<h3>By Occasions</h3>
+				<h3><br></h3>
 				<ul>
-					<li><a href="#">Snacking</a></li>
-					<li><a href="#">Ramadan</a></li>
-					<li><a href="#">BBQ</a></li>
-				</ul>
-			</div>
-
-			<div class="footer-column">
-				<h3>By Courses</h3>
-				<ul>
-					<li><a href="#">Vegetarian</a></li>
-					<li><a href="#">Main Course</a></li>
-					<li><a href="#">Side Dish</a></li>
-					<li><a href="#">Soups</a></li>
-					<li><a href="#">Beverages</a></li>
+					<li><a href="products.html">Pickled Red Chilli</a></li>
+					<li><a href="products.html">Pickled Green Chilli</a></li>
+					<li><a href="products.html">Baby Corn – Chilli</a></li>
+					<li><a href="products.html">Baby Corn – Herbs</a></li>
+					<li><a href="products.html">Relish – Hot & Sweet</a></li>
 				</ul>
 			</div>
 		</div>
@@ -277,36 +186,33 @@
 		<div class="footer-contact">
 			<div class="contact-item">
 				<i class="fa fa-map-marker"></i>
-				<span>123 Pickle Street, Mangalore, India</span>
+				<span>GLOBAL DISTRIBUTORS AND <br>CO
+					, JEPPU, MANGALORE</span>
 			</div>
 			<div class="contact-item">
 				<i class="fa fa-phone"></i>
-				<span>+91 98765 43210</span>
+				<span>+91 6366955005</span>
 			</div>
 			<div class="contact-item">
 				<i class="fa fa-envelope"></i>
-				<span>support@cedarkart.com</span>
+				<span>contact@cedarofresh.com</span>
 			</div>
 		</div>
 
 		<div class="footer-bottom">
 			<div class="footer-copy">
-				© 2025 Cedarkart. All Rights Reserved.
+				© 2025 Cedaro. All Rights Reserved.
 			</div>
-			<div class="footer-links">
+			<!-- <div class="footer-links">
 				<a href="#">Sitemap</a> |
 				<a href="#">Privacy Policy</a> |
 				<a href="#">Terms of Service</a>
-			</div>
+			</div> -->
 		</div>
 	</footer>
 
 
 	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 
 </body>
