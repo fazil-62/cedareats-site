@@ -678,7 +678,7 @@ body {
   box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
 .product-logo img{
-  height: 60px;
+  height: 60px !important;
 }
 
 .product-img {
