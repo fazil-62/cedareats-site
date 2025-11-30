@@ -317,6 +317,69 @@ body {
 	}
 }
 
+.scrolling-strip {
+  width: 100%;
+  overflow: hidden;
+  background: #db3502;
+  padding: 6px 0;
+  border-top: 1px solid #e46f4c;
+  border-bottom: 1px solid #e46f4c;
+}
+
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.track {
+  display: inline-block;
+  white-space: nowrap;
+  font-weight: 700;
+  color: #ffffff;
+  word-spacing: 3rem;
+  font-size: 16px;
+  padding-right: 2rem;
+  animation: scroll 40s linear infinite;
+}
+
+.track span {
+  padding-right: 4rem; /* increase or decrease as needed */
+}
+
+/* REPEAT the content MANY times */
+.track::after {
+  content:
+    " Healthy  •  Tasty  •  Easy  •  Sustainable  • "
+    " Healthy  •  Tasty  •  Easy  •  Sustainable  • "
+    " Healthy  •  Tasty  •  Easy  •  Sustainable  • "
+    " Healthy  •  Tasty  •  Easy  •  Sustainable  • "
+    " Healthy  •  Tasty  •  Easy  •  Sustainable  • "
+    " Healthy  •  Tasty  •  Easy  •  Sustainable  • "
+    " Healthy  •  Tasty  •  Easy  •  Sustainable  • "
+    " Healthy  •  Tasty  •  Easy  •  Sustainable  • "
+    " Healthy  •  Tasty  •  Easy  •  Sustainable  • "
+    " Healthy  •  Tasty  •  Easy  •  Sustainable  • "
+    " Healthy  •  Tasty  •  Easy  •  Sustainable  • "
+    " Healthy  •  Tasty  •  Easy  •  Sustainable  • "
+    " Healthy  •  Tasty  •  Easy  •  Sustainable  • "
+    " Healthy  •  Tasty  •  Easy  •  Sustainable  • "
+    " Healthy  •  Tasty  •  Easy  •  Sustainable  • "
+    " Healthy  •  Tasty  •  Easy  •  Sustainable  • "
+    " Healthy  •  Tasty  •  Easy  •  Sustainable  • "
+    " Healthy  •  Tasty  •  Easy  •  Sustainable  • "
+    " Healthy  •  Tasty  •  Easy  •  Sustainable  • "
+    " Healthy  •  Tasty  •  Easy  •  Sustainable  • ";
+}
+
+/* Now that it's very long → -50% works perfectly */
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+
 
 /* -------------------------------
    RECIPES SECTION
