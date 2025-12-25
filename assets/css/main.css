@@ -20,7 +20,7 @@ body {
 	color: #243d1c;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   body {
     padding-top: 60px; /* reduce from 100px */
   }
@@ -86,7 +86,7 @@ body {
 	/* orange */
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .logo {
         margin-left: -40px; /* adjust value as needed */
     }
@@ -402,7 +402,7 @@ body {
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   /* Reduce space between text & image */
   .slide {
     gap: 5px; /* was 40px */
@@ -428,7 +428,7 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .slide .image img {
     max-width: 160px; /* smaller on mobile */
   }
@@ -609,6 +609,32 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .about-container {
+    padding: 1.5rem 1rem; /* reduce container padding */
+  }
+
+  .about-container h1 {
+    font-size: 1.5rem; /* slightly smaller headings */
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-container p,
+  .about-container li,
+  .about-intro {
+    font-size: 0.95rem; /* smaller paragraph & list text */
+    line-height: 1.6;
+  }
+
+  /* Reduce underline size */
+  .about-container h1::after {
+    width: 40px;
+    height: 3px;
+  }
+}
+
+
 
 /* -------------------------------
    CONTACT US
@@ -774,7 +800,7 @@ body {
 }
 
 /* Hide quick links and products on mobile */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .custom-footer {
     padding: 0em 1.5em;  /* reduce padding */
     min-height: auto;     /* remove the big min-height */
@@ -806,7 +832,7 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 
   .footer-contact {
     gap: 0.6em;
@@ -914,7 +940,7 @@ body {
   margin: 0.3rem 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 
   /* Section padding smaller */
   .products-section {
@@ -956,14 +982,14 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 
   /* Product name */
   .product-card h3 {
@@ -982,7 +1008,7 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
 
   .product-logo {
     display: flex;
