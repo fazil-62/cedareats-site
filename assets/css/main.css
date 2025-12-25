@@ -86,7 +86,7 @@ body {
 	/* orange */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .logo {
         margin-left: -40px; /* adjust value as needed */
     }
