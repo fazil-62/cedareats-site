@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+    <title>Recipes - Cedaro</title>
+    <link rel="icon" type="image/png" href="images/Website layout-05.png">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <div class="logo"><img src="images/cedaro-logo.png" alt="Cedaro" /></div>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <nav class="mobile-drawer" id="mobile-drawer">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Backdrop -->
+    <div class="backdrop" id="drawer-backdrop"></div>
+
+    <section class="recipe-detail-section">
+        <div class="inner">
+            <h1>Loaded Jalapeño Nachos</h1>
+            <img src="images/JalapenoNachos.jpg" alt="Loaded Jalapeño Nachos">
+
+            <div class="recipe-meta">
+                <span><i class="fa fa-clock"></i> Prep: 10 mins</span>
+                <span><i class="fa fa-clock"></i> Cook: 12 mins</span>
+                <span><i class="fa fa-users"></i> Serves: 2-3</span>
+            </div>
+
+            <div class="recipe-content">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>Tortilla chips</li>
+                    <li>Cheddar cheese</li>
+                    <li>Black beans</li>
+                    <li>Salsa</li>
+                    <li>Sour cream</li>
+                    <li>Cedaro Jalapeños</li>
+                </ul>
+
+                <h2>Method</h2>
+                <ol>
+                    <li>Preheat the oven to 180°C / 350°F.</li>
+                    <li>Layer tortilla chips on a baking tray.</li>
+                    <li>Top with cheese, beans, salsa, and Cedaro Jalapeños.</li>
+                    <li>Bake for 10-12 minutes until cheese melts.</li>
+                    <li>Remove from oven and top with sour cream. Serve hot.</li>
+                </ol>
+
+                <h2>Tips</h2>
+                <p>Use freshly grated cheese for the best melt. Add guacamole or olives for extra flavor.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+        <div class="footer-top">
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="products.html">Jalapeno</a></li>
+                    <li><a href="products.html">Baby Gherkins – Chilli</a></li>
+                    <li><a href="products.html">Baby Gherkins – Herbs</a></li>
+                    <li><a href="products.html">Burger Chips – Chilli</a></li>
+                    <li><a href="products.html">Banderilla</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3><br></h3>
+                <ul>
+                    <li><a href="products.html">Pickled Red Chilli</a></li>
+                    <li><a href="products.html">Pickled Green Chilli</a></li>
+                    <li><a href="products.html">Baby Corn – Chilli</a></li>
+                    <li><a href="products.html">Baby Corn – Herbs</a></li>
+                    <li><a href="products.html">Relish – Hot & Sweet</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-contact">
+            <div class="contact-item">
+                <i class="fa fa-map-marker"></i>
+                <span>GLOBAL DISTRIBUTORS AND <br>CO
+                    , MANGALORE</span>
+            </div>
+            <div class="contact-item">
+                <i class="fa fa-phone"></i>
+                <span>+91 6366955005</span>
+            </div>
+            <div class="contact-item">
+                <i class="fa fa-envelope"></i>
+                <span>contact@cedarofresh.com</span>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copy">
+                © 2025 Cedaro. All Rights Reserved.
+            </div>
+            <!-- <div class="footer-links">
+				<a href="#">Sitemap</a> |
+				<a href="#">Privacy Policy</a> |
+				<a href="#">Terms of Service</a>
+			</div> -->
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", () => {
+            const buttons = document.querySelectorAll(".toggle-btn");
+
+            buttons.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    const recipe = btn.previousElementSibling;
+                    recipe.style.display =
+                        recipe.style.display === "block" ? "none" : "block";
+                    btn.textContent =
+                        recipe.style.display === "block" ? "Hide Recipe" : "View Recipe";
+                });
+            });
+        });</script>
+</body>
+
+</html>
