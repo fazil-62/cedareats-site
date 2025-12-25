@@ -91,7 +91,9 @@ body {
   }
 
   #header {
-    position: relative;
+    position: fixed;   /* keep header stuck to top */
+    top: 0;
+    left: 0;
     padding-right: 56px;
   }
 
@@ -142,6 +144,7 @@ body {
     z-index: 1001;
     transition: right 0.3s ease;
     padding: 40px 20px;
+    padding-top: 90px; /* 100px header + breathing space */
     overflow-y: auto;
   }
 
