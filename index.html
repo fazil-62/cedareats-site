@@ -13,24 +13,39 @@
 
 <body>
 
-	<!-- Header -->
 	<header id="header" class="alt">
-		<div class="logo"><img src="images/cedaro-logo.png" alt="Cedaro" /></div>
-		<nav class="top-nav">
+
+		<!-- Left navigation -->
+		<nav class="nav-left">
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="products.html">Products</a></li>
 				<li><a href="recipes.html">Recipes</a></li>
+			</ul>
+		</nav>
+
+		<!-- Center logo -->
+		<div class="logo">
+			<img src="images/cedaro-logo.png" alt="Cedaro" />
+		</div>
+
+		<!-- Right navigation -->
+		<nav class="nav-right">
+			<ul>
 				<li><a href="about.html">About Us</a></li>
 				<li><a href="contact.html">Contact Us</a></li>
 			</ul>
 		</nav>
+
+		<!-- Hamburger (mobile only) -->
 		<button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation">
 			<span></span>
 			<span></span>
 			<span></span>
 		</button>
+
 	</header>
+
 
 	<!-- Mobile Drawer Menu -->
 	<nav class="mobile-drawer" id="mobile-drawer">
@@ -104,6 +119,59 @@
 		</div>
 	</section>
 
+	<section class="lineup-section">
+		<div class="lineup-header">
+			<h2>Meet the Lineup</h2>
+		</div>
+
+		<div class="lineup-wrapper">
+			<button class="lineup-arrow left" aria-label="Previous">&#10094;</button>
+
+			<div class="lineup-viewport">
+				<div class="lineup-track">
+					<!-- Repeat for all products -->
+					<div class="lineup-item">
+						<img src="images/jalapenos.png" alt="Product 1">
+						<h3>Jalapenos</h3>
+						<p>Short description here</p>
+						<a href="#">Know more</a>
+					</div>
+
+					<div class="lineup-item">
+						<img src="images/babycornchilli.png" alt="Product 2">
+						<h3>Product Two</h3>
+						<p>Short description here</p>
+						<a href="#">Know more</a>
+					</div>
+
+					<div class="lineup-item">
+						<img src="images/burgerchips.png" alt="Product 3">
+						<h3>Product Three</h3>
+						<p>Short description here</p>
+						<a href="#">Know more</a>
+					</div>
+
+					<div class="lineup-item">
+						<img src="images/babygherkinschilli.png" alt="Product 4">
+						<h3>Product Four</h3>
+						<p>Short description here</p>
+						<a href="#">Know more</a>
+					</div>
+
+					<div class="lineup-item">
+						<img src="images/babygherkinsherbs.png" alt="Product 5">
+						<h3>Product Five</h3>
+						<p>Short description here</p>
+						<a href="#">Know more</a>
+					</div>
+				</div>
+			</div>
+
+			<button class="lineup-arrow right" aria-label="Next">&#10095;</button>
+		</div>
+	</section>
+
+
 
 
 
@@ -111,8 +179,43 @@
 
 	<section class="image-section">
 		<img src="images/dinerTable.jpg" alt="Natural Farm" class="full-width-image">
+		<div class="image-overlay-text">
+			WE CRAFT DISTINCTIVE FLAVOURS GIVING YOU BACK TIME TO SAVOUR LIFE’S SIMPLE PLEASURES.
+		</div>
 	</section>
 
+
+	<section class="recipes-home-section">
+		<div class="recipes-header">
+			<h2>Recipes to Try</h2>
+		</div>
+
+		<div class="recipes-grid">
+			<!-- Recipe 1 -->
+			<div class="recipe-item">
+				<img src="images/gherkinburger.jpg" alt="Spicy Burger">
+				<h3>Spicy Burger</h3>
+				<p>A bold, indulgent burger layered with Cedaro flavours.</p>
+				<a href="recipes.html" class="recipe-link">Go to Recipe</a>
+			</div>
+
+			<!-- Recipe 2 -->
+			<div class="recipe-item">
+				<img src="images/MediterraneanChickpeaSalad_Square.jpg" alt="Chilli Corn Bowl">
+				<h3>Chilli Corn Bowl</h3>
+				<p>A vibrant bowl packed with crunch and heat.</p>
+				<a href="recipes.html" class="recipe-link">Go to Recipe</a>
+			</div>
+
+			<!-- Recipe 3 -->
+			<div class="recipe-item">
+				<img src="images/relsihDog.jpg" alt="Gherkin Sandwich">
+				<h3>Gherkin Sandwich</h3>
+				<p>Fresh, tangy layers made for everyday comfort.</p>
+				<a href="recipes.html" class="recipe-link">Go to Recipe</a>
+			</div>
+		</div>
+	</section>
 
 
 
